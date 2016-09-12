@@ -40,10 +40,15 @@
 
 4. compile & 실행방법
 
-		codes/tests 폴더에 proto.c, torus.sh, run.sh 복사
+		codes/tests 폴더에 proto.c, torus.sh, run.sh, obj_trace.txt 복사
 		
 		run.sh 실행
 
 5. trace file 이름 변경
 
 		proto.c에서 FILENAME 매크로의 이름 수정 후 run.sh 실행
+
+6. trace file example
+
+        0 1234 -> 0: READ (1: WRITE)
+                  1234: Object number
