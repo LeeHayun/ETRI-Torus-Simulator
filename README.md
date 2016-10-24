@@ -6,6 +6,8 @@
 	
 		- mpich, pkg-config
 		
+		- Fedora 계열에서는 openmpi 설치 후 ‘module add mpi/openmpi’ 수행
+		
 2. ROSS 설치
 
 		git clone https://github.com/carothersc/ROSS.git
@@ -34,7 +36,7 @@
 		
 		cd build
 		
-		../configure CC=mpicc PKG_CONFIG_PATH=[path to ross]/install/lib/pkgconfig
+		../configure CC=mpicc PKG_CONFIG_PATH=/usr/lib/pkgconfig
 		
 		make && make install
 
